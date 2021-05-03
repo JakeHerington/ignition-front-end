@@ -1,19 +1,18 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import NavBar from '../components/NavBar'
+import Dashboard from '../components/Dashboard'
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Jakes app</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-
-
-
-
-      </main>
-    </div>
+    <>
+    <Head>
+      <title>Jakes app</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <NavBar />
+    <div style={{paddingTop: 54 + 'px'}} />
+    <Dashboard />
+    </>
   )
 }
