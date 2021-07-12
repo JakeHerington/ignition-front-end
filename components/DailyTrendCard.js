@@ -6,7 +6,6 @@ import DailyTrendChart from './DailyTrendChart'
 export default function DailyTrendCard() {
 
     let date = format(new Date(), 'PPP')
-    console.log("Before Trend Card Render")
     return (
         <Card>
             <Card.Header>Yesterday Trend</Card.Header>
